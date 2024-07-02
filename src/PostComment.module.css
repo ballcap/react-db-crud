@@ -5,7 +5,10 @@
 }
 
 .form input,
-.form textarea { padding: 4px 12px; }
+.form textarea {
+  padding: 4px 12px;
+  margin: 4px 0;
+}
 
 .form button {
   padding: 4px 12px;
