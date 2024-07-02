@@ -4,9 +4,11 @@ import style from './PostComment.module.css';
 export default function PostComments({ onCommentPosted }) {
   const [username, setUsername] = useState('');
   const [comment, setComment] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false); // Add state for button disabled status
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true); // Disable button on submit
     const newComment = {
       chatname: username,
       chatcomment: comment,
@@ -28,6 +30,8 @@ export default function PostComments({ onCommentPosted }) {
       }
     } catch (error) {
       console.error('Error posting comment:', error);
+    } finally {
+      setIsSubmitting(false); // Re-enable button after submission is complete
     }
   };
 
@@ -48,7 +52,7 @@ export default function PostComments({ onCommentPosted }) {
         onChange={(e) => setComment(e.target.value)}
         required
       ></textarea>
-      <button type="submit">POST</button>
+      <button type="submit" disabled={isSubmitting}>POST</button>
     </form>
   );
 }
