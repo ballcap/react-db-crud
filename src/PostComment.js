@@ -12,7 +12,7 @@ export default function PostComments({ onCommentPosted }) {
     };
 
     try {
-      const response = await fetch('https://pg-1dae0a96-burneract-ef64.e.aivencloud.com:12971/chats', {
+      const response = await fetch('https://node-db-crud.onrender.com/chats', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
