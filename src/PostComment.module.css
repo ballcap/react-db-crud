@@ -4,16 +4,12 @@
   border-radius:7px;
 }
 
-.form input {
-  padding: 20px;
-}
-
-.form textarea {
-  padding: 20px;
-}
+.form input,
+.form textarea { padding: 4px 12px; }
 
 .form button {
-  padding: 20px 35px;
+  padding: 4px 12px;
   border: solid 1px #222;
-  border-radius: 12px;
+  border-radius: 4px;
+  margin: 10px;
 }
