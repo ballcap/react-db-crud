@@ -7,7 +7,7 @@ export default function App() {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    fetch('https://pg-1dae0a96-burneract-ef64.e.aivencloud.com:12971/chats')
+    fetch('https://node-db-crud.onrender.com/chats')
       .then(response => response.json())
       .then(data => setComments(data))
       .catch(error => console.error('Error fetching comments:', error));
