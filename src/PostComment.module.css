@@ -29,4 +29,5 @@
 .form button:hover {
   cursor: pointer;
   border: solid 1px #32a2f2;
+  color: #32a2f2;
 }
