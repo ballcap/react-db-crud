@@ -12,7 +12,7 @@ export default function PostComments({ onCommentPosted }) {
     };
 
     try {
-      const response = await fetch('http://localhost:3001/comments', {
+      const response = await fetch('https://pg-1dae0a96-burneract-ef64.e.aivencloud.com/comments', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
