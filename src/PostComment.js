@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import style from './PostComment.module.css';
 
 export default function PostComments({ onCommentPosted }) {
   const [username, setUsername] = useState('');
@@ -31,7 +32,7 @@ export default function PostComments({ onCommentPosted }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={style.form}>
       <input
         type="text"
         placeholder="Username"
