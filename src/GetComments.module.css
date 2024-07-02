@@ -26,6 +26,5 @@
 .comment {
     display: block;
     padding: 10px 0;
-    text-align: left;
-    width: fit-content;
+    text-align: center;
 }
