@@ -1,0 +1,19 @@
+.form {
+  border: solid 1px #a1a1a1;
+  padding: 20px;
+  border-radius:7px;
+}
+
+.form input {
+  padding: 20px;
+}
+
+.form textarea {
+  padding: 20px;
+}
+
+.form button {
+  padding: 20px 35px;
+  border: solid 1px #222;
+  border-radius: 12px;
+}
