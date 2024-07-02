@@ -10,6 +10,10 @@
   margin: 4px 0;
 }
 
+.form textarea {
+  width: 100%;
+}
+
 .form button {
   padding: 4px 12px;
   border: solid 1px #222;
