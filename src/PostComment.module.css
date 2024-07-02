@@ -8,12 +8,14 @@
 .form textarea {
   padding: 4px 12px;
   margin: 4px 0;
+  box-sizing: border-box;
 }
 
 .form textarea {
   width: 100%;
   resize: none;
   height: 200px;
+  box-sizing: border-box;
 }
 
 .form button {
@@ -21,4 +23,5 @@
   border: solid 1px #222;
   border-radius: 4px;
   margin: 10px;
+  box-sizing: border-box;
 }
